@@ -14,7 +14,9 @@
 <p align="center">
   if $$f(n) = 0$$ than $$f(n - 1) = 1 or 0$$
 </p>
-
+<p align="center">
+ BTW 看到有人用fib解 | https://blog.csdn.net/mobius_strip/article/details/39801239
+</p>
 
 <p align="center">
   程式如下:
