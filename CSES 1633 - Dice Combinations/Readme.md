@@ -1,46 +1,84 @@
-<div align="center">
-  <h1>題解</h1>
-  <p>CSES 1633 - Dice Combinations
-  | https://cses.fi/problemset/task/1633/
-</p>
-</div>
+# CSES 1633 — Dice Combinations
+ 題目連結  
+https://cses.fi/problemset/task/1633/
 
-<p align="center">
- 骰子骰的組合數等於n
-</p>
-<p align="center">
-  → 用DP展開式 $$f(n) = f(n - 1) + f(n - 2) + f(n - 3) + f(n - 4) + f(n - 5) + f(n - 6)$$
-</p>
-<p align="center">
-  但有時 $$(n - 1) < 0$$ 或 $$(n - 2) < 0$$ 或 $$(n - 3) < 0$$ 或 $$(n - 4) < 0$$ 或 $$(n - 5) < 0$$ 或 $$(n - 6) <  0$$
-</p>
-<p align="center">
-  所以用 $$n$$ $$k$$ 去做判斷,並且要去 % $$mod$$ 不然會過大爆開
-</p>
+---
 
-<p align="center">
-  程式如下:
-</p>
+##  題目說明
 
-``` cpp
+給定一個整數 `n`，每次可以擲一顆骰子，點數範圍為 **1 到 6**。  
+請計算 **所有點數總和剛好等於 `n` 的不同組合數量**。
+
+＃ 結果可能非常大，請將答案對 **`10^9 + 7`** 取模。
+
+---
+
+##  解題思路（Dynamic Programming）
+
+###  _1._  狀態定義
+
+令： $dp[i] =$ 點數總和為 $i$ 的所有合法組合數
+
+---
+
+###  _2._ 狀態轉移
+
+每一次擲骰子可能出現 1～6 點，因此： $dp[i] = dp[i-1] + dp[i-2] + dp[i-3] + dp[i-4] + dp[i-5] + dp[i-6]$
+
+---
+
+### _3._ 邊界與初始化
+
+- 若 `i - k < 0`，該項不可計算
+- 初始狀態： $dp[0] = 1$
+
+代表「不擲骰子」也是一種合法方式
+
+---
+
+### _4._ 為什麼要取模（mod）
+
+組合數會隨 `n` 指數成長，若不取模會造成 **整數溢位（overflow）**。  
+因此每一步都必須對 `10^9 + 7` 取模。
+
+---
+
+##  演算法流程
+
+1. 使用一維 DP 陣列 `dp`
+2. 外層枚舉目前點數總和 `i`
+3. 內層枚舉骰子點數 `k = 1 ~ 6`
+4. 當 `i - k >= 0` 時才進行狀態轉移
+5. 每一步皆進行取模運算
+
+---
+
+## 🧾 C++ 參考實作
+
+```cpp
 #include <iostream>
 using namespace std;
+
 int main()
 {
-	long long int n; cin >> n;
-	int dp[n + 1];
-	for (int i = 0; i <= n; i++) dp[i] = 0;
-	dp[0] = 1;
-	for (int i = 1; i <= n; i++)
-	{
-		long long count = 0;
-		for (int k = 1; k <= 6; k++)
-		{
-			if (i - k >= 0)
-			{
-				dp[i] = (dp[i] + dp[i - k]) % 1000000007LL;	
-			}
-		}
-	}
-	cout << dp[n];
+    long long n;
+    cin >> n;
+
+    int dp[n + 1];
+    for (int i = 0; i <= n; i++) dp[i] = 0;
+
+    dp[0] = 1;
+
+    for (int i = 1; i <= n; i++)
+    {
+        for (int k = 1; k <= 6; k++)
+        {
+            if (i - k >= 0)
+            {
+                dp[i] = (dp[i] + dp[i - k]) % 1000000007;
+            }
+        }
+    }
+
+    cout << dp[n];
 }
