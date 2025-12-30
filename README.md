@@ -7,6 +7,7 @@
 - [107學年度 北二區 學科能力競賽複賽 pE](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/107%E5%B9%B4%E5%8C%97%E4%BA%8C%E5%8D%80%E8%B3%87%E8%A8%8A%E5%AD%B8%E7%A7%91%E8%83%BD%E5%8A%9B%E8%A4%87%E8%B3%BD%20-%20pE)
 - [Kattis - Riječi](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/Kattis%20-%20Rije%C4%8Di)
 - [Atcoder dp_a Frog 1](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/AtCoder%20dp_a%20-%20Frog%201)
+- [UVa 10684 - The jackpot](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/UVa%2010684%20-%20The%20jackpot)
 
 
 
