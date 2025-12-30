@@ -8,6 +8,7 @@
 - [Kattis - Riječi](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/Kattis%20-%20Rije%C4%8Di)
 - [Atcoder dp_a Frog 1](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/AtCoder%20dp_a%20-%20Frog%201)
 - [Atcoder dp_b Frog 2](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/AtCoder%20dp_b%20-%20Frog%202)
+- [Atcoder dp_c Vacation](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/AtCoder%20dp_c%20-%20Vacation)
 - [UVa 10684 - The jackpot](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/UVa%2010684%20-%20The%20jackpot)
 
 
