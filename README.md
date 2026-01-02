@@ -19,5 +19,5 @@
 
 
 ### APCS
-- [APCS 2022/10 - pB](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202022-10%20pB)
-- [APCS 2017/10 - pC](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202017-10%20pC)
+- [APCS 2022/10 - pB (建表)](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202022-10%20p)
+- [APCS 2017/10 - pC (二元樹)](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202017-10%20pC)
