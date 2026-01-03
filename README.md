@@ -24,6 +24,7 @@
 
 ### APCS
 - [APCS 2016/03 - pD (二元樹)](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202016-03%20pD)
+- [APCS 2017/10 - pA (邏輯運算子)](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202017-10%20pA)
 - [APCS 2017/10 - pC (二元樹)](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202017-10%20pC)
 - [APCS 2017/03 - pB (圖論)](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202017-03%20pB)
 - [APCS 2022/10 - pB (建表)](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202022-10%20p)
