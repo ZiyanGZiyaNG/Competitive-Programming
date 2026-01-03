@@ -1,6 +1,6 @@
 # Competitive-Programming
 
-### DP
+### Dynamic Programming
 - [CSES 1633 - Dice Combinations](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/CSES%201633%20-%20Dice%20Combinations)
 
 - [TOJ 508 - 完美河道](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/TOJ%20508%20-%20%E5%AE%8C%E7%BE%8E%E6%B2%B3%E9%81%93)
@@ -16,6 +16,10 @@
 
 - [UVa 10684 - The jackpot](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/UVa%2010684%20-%20The%20jackpot)
 - [UVa 10450 — World Cup Noise](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/UVa%2010450%20-%20World%20Cup%20Noise)
+
+### Graph Theory
+
+-[AtCoder typical90_bz - Easy Graph Problem（★2）](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/AtCoder%20typical90_bz%20-%20Easy%20Graph%20Problem%EF%BC%88%E2%98%852%EF%BC%89)
 
 
 ### APCS
