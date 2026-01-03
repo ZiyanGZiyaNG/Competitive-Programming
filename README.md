@@ -19,7 +19,7 @@
 
 ### Graph Theory
 
--[AtCoder typical90_bz - Easy Graph Problem（★2）](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/AtCoder%20typical90_bz%20-%20Easy%20Graph%20Problem%EF%BC%88%E2%98%852%EF%BC%89)
+- [AtCoder typical90_bz - Easy Graph Problem（★2）](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/AtCoder%20typical90_bz%20-%20Easy%20Graph%20Problem%EF%BC%88%E2%98%852%EF%BC%89)
 
 
 ### APCS
