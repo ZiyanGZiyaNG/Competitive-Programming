@@ -31,6 +31,9 @@
 - [APCS 2020/10 - pB (模擬)](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202020-10%20pB)
 - [APCS 2022/10 - pB (建表)](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202022-10%20p)
 
+### Notes
+- [Data Strusture](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Data%20Structure.md)
+
 
 ### TOI
 - [TOI 2025/09 pA](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/TOI%202025-09%20pA)
