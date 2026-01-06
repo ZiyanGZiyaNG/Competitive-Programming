@@ -1,472 +1,81 @@
-## VLA（變長度陣列）
+### VLA
 
-### 常用操作
-- 宣告一維：`int a[n];`  
-  - 功能：建立長度 n  
-  - 時間複雜度：O(1)
+- Header File
 
-- 宣告二維：`int a[r][c];`  
-  - 功能：建立 r×c  
-  - 時間複雜度：O(1)
+    `NO`
 
-- 空間一維：`int a[n];`  
-  - 功能：佔用 n 個元素的記憶體  
-  - 時間複雜度：O(n)
+- Common Operations
 
-- 空間二維：`int a[r][c];`  
-  - 功能：佔用 r·c 個元素的記憶體  
-  - 時間複雜度：O(r·c)
+Announcement(One-dimensional)｜ `int a[n];`
 
-- 存取一維：`a[i]`  
-  - 功能：存取第 i 個元素  
-  - 時間複雜度：O(1)
+Announcement(Two-dimensional)｜ `int a[r][c];`
 
-- 存取二維：`a[i][j]`  
-  - 功能：存取第 (i, j) 個元素  
-  - 時間複雜度：O(1)
+Value｜ `a[i];` *i -> index
 
-### 特點
-1. C++ 標準不保證支援（常見為編譯器延伸），部分 Online Judge 會 CE。  
-2. 真香。
+- Features
+
+  1. Easy
+  2. This is illegal in C++ (Maybe will CE)
+  3. Can use `int` or `string`
 
 ---
 
-## Vector（動態陣列）
+### Vector
 
-### 標頭檔
-- `#include <vector>`
+- Header File
 
-### 常用操作
-- 宣告：`vector<int> v;`  
-  - 功能：建立空陣列  
-  - 時間複雜度：O(1)
+   `#include <vector>`
 
-- 指定長度：`vector<int> v(n);`  
-  - 功能：長度 n（元素為預設值）  
-  - 時間複雜度：O(n)
+- Common Operations
 
-- 指定長度與初值：`vector<int> v(n, x);`  
-  - 功能：長度 n，元素全為 x  
-  - 時間複雜度：O(n)
+Anncouncement(One-dimensional)｜ `vector<int> v(size, default value);` *size and default value can neglect
 
-- 尾端加入：`v.push_back(x);`  
-  - 功能：尾端新增元素  
-  - 時間複雜度：平均 O(1)
+Anncouncement(Two-dimensional)｜ `vector<vector<int>> v(size, default value);` *size and default value can neglect
 
-- 尾端就地建構：`v.emplace_back(x);`  
-  - 功能：尾端新增（就地建構）  
-  - 時間複雜度：平均 O(1)
+Anncouncement(Pair) ｜ `vector<pair<int, int>> v(size, default value);` *size and default value can neglect
 
-- 尾端刪除：`v.pop_back();`  
-  - 功能：刪除尾端元素  
-  - 時間複雜度：O(1)
+Input｜ `v.push_bacK(x);`
 
-- 取尾端：`v.back();`  
-  - 功能：取得最後元素（不刪除）  
-  - 時間複雜度：O(1)
+Input｜ `v.emplace_back(x);` (Fast than `v.push_back(x);`)
 
-- 取大小：`v.size();`  
-  - 功能：元素數量  
-  - 時間複雜度：O(1)
+Clear｜ `v.clear();`
 
-- 判空：`v.empty();`  
-  - 功能：是否為空  
-  - 時間複雜度：O(1)
+Size｜ `v.size();`
 
-- 清空：`v.clear();`  
-  - 功能：清除所有元素  
-  - 時間複雜度：O(n)
+Empty｜ `v.empty();`
 
-- 存取：`v[i]`  
-  - 功能：存取第 i 個元素  
-  - 時間複雜度：O(1)
+Value｜ `v[i];` *i -> index
 
-- 中間插入：`v.insert(pos, x);`  
-  - 功能：在 pos 前插入 x  
-  - 時間複雜度：O(n)
+- Features
 
-- 中間刪除：`v.erase(pos);`  
-  - 功能：刪除 pos 位置元素  
-  - 時間複雜度：O(n)
-
-- 刪除區間：`v.erase(l, r);`  
-  - 功能：刪除 [l, r)  
-  - 時間複雜度：O(n)
-
-### 特殊用法
-
-- 二元資料：`vector<pair<int, int>> v;`  
-  - 取值：`v[i].first`、`v[i].second`  
-  - 加入：`v.push_back({x, y});`
-
-- 二維陣列：`vector<vector<int>> v;`
-
-### 特點
-1. 可變長度（可持續從尾端加入）。  
-2. 競賽中最常用、也最穩定的「陣列」做法。  
-3. 可搭配 STL 演算法。
+  1. Can change array length
+  2. Only pop push at the end
+  3. Save space
+  4. Inefficient
 
 ---
+ 
+### Queue
 
-## Stack（堆疊）
+- Header File
 
-### 標頭檔
-- `#include <stack>`
+   `#include <queue>`
 
-### 常用操作
-- 宣告：`stack<int> st;`  
-  - 功能：建立空堆疊  
-  - 時間複雜度：O(1)
+- Common Operations
 
-- 推入：`st.push(x);`  
-  - 功能：將 x 放到頂端  
-  - 時間複雜度：O(1)
+Anncouncement｜ `queue<int> q;`
 
-- 彈出：`st.pop();`  
-  - 功能：移除頂端元素（不回傳值）  
-  - 時間複雜度：O(1)
+Input｜ `q.push(x);`
 
-- 取頂端：`st.top();`  
-  - 功能：取得頂端元素  
-  - 時間複雜度：O(1)
+Value｜ `q.front();`
 
-- 取大小：`st.size();`  
-  - 功能：元素數量  
-  - 時間複雜度：O(1)
+Remove｜ `q.pop();`
 
-- 判空：`st.empty();`  
-  - 功能：是否為空  
-  - 時間複雜度：O(1)
+Empty｜ `q.empty();`
 
-### 特點
-1. LIFO：後進先出。  
-2. 常見用途：DFS。
+Size｜ `q.size();`
 
----
+- Features
 
-## Queue（佇列）
-
-### 標頭檔
-- `#include <queue>`
-
-### 常用操作
-- 宣告：`queue<int> q;`  
-  - 功能：建立空佇列  
-  - 時間複雜度：O(1)
-
-- 推入：`q.push(x);`  
-  - 功能：將 x 放到隊尾  
-  - 時間複雜度：O(1)
-
-- 彈出：`q.pop();`  
-  - 功能：移除隊首元素（不回傳值）  
-  - 時間複雜度：O(1)
-
-- 取隊首：`q.front();`  
-  - 功能：取得隊首元素（不移除）  
-  - 時間複雜度：O(1)
-
-- 取隊尾：`q.back();`  
-  - 功能：取得隊尾元素（不移除）  
-  - 時間複雜度：O(1)
-
-- 取大小：`q.size();`  
-  - 功能：元素數量  
-  - 時間複雜度：O(1)
-
-- 判空：`q.empty();`  
-  - 功能：是否為空  
-  - 時間複雜度：O(1)
-
-### 特點
-1. FIFO：先進先出。  
-2. 常用:BFS。
-
----
-
-## set（有序集合）
-
-### 標頭檔
-- `#include <set>`
-
-### 常用操作
-- 宣告：`set<int> s;`  
-  - 功能：建立空集合（不重複、會排序）  
-  - 時間複雜度：O(1)
-
-- 插入：`s.insert(x);`  
-  - 功能：插入 x（若已存在不變）  
-  - 時間複雜度：O(log n)
-
-- 刪除（值）：`s.erase(x);`  
-  - 功能：刪除值 x（若存在）  
-  - 時間複雜度：O(log n)
-
-- 查找：`s.find(x);`  
-  - 功能：找 x，回傳 iterator  
-  - 時間複雜度：O(log n)
-
-- 是否存在：`s.count(x);`  
-  - 功能：存在回 1，不存在回 0  
-  - 時間複雜度：O(log n)
-
-- 下界：`s.lower_bound(x);`  
-  - 功能：第一個 `>= x` 的位置  
-  - 時間複雜度：O(log n)
-
-- 上界：`s.upper_bound(x);`  
-  - 功能：第一個 `> x` 的位置  
-  - 時間複雜度：O(log n)
-
-- 取最小：`*s.begin()`  
-  - 功能：最小值  
-  - 時間複雜度：O(1)
-
-- 取最大：`*prev(s.end())`  
-  - 功能：最大值  
-  - 時間複雜度：O(1)
-
-- 取大小：`s.size();`  
-  - 功能：元素數量  
-  - 時間複雜度：O(1)
-
-- 判空：`s.empty();`  
-  - 功能：是否為空  
-  - 時間複雜度：O(1)
-
-- 清空：`s.clear();`  
-  - 功能：清除所有元素  
-  - 時間複雜度：O(n)
-
-### 特點
-1. 自動排序、元素不重複。  
-2. 可用 `lower_bound/upper_bound` 做動態有序題。  
-3. 不支援索引存取（沒有 `s[i]`）。
-
----
-
-## multiset（可重複的有序集合）
-
-### 標頭檔
-- `#include <set>`
-
-### 常用操作
-- 宣告：`multiset<int> ms;`  
-  - 功能：可重複、會排序  
-  - 時間複雜度：O(1)
-
-- 插入：`ms.insert(x);`  
-  - 功能：插入 x（可插入多次）  
-  - 時間複雜度：O(log n)
-
-- 查找一個：`ms.find(x);`  
-  - 功能：找到任一個 x 的位置（iterator）  
-  - 時間複雜度：O(log n)
-
-- 計數：`ms.count(x);`  
-  - 功能：x 出現次數  
-  - 時間複雜度：O(k + log n)
-
-- 刪除（全部 x）：`ms.erase(x);`  
-  - 功能：刪掉所有值為 x 的元素  
-  - 時間複雜度：O(k + log n)
-
-- 刪除（一個 x）：`ms.erase(ms.find(x));`  
-  - 功能：只刪掉一個 x（需先確認存在）  
-  - 時間複雜度：O(log n)
-
-- 下界：`ms.lower_bound(x);`  
-  - 功能：第一個 `>= x` 的位置  
-  - 時間複雜度：O(log n)
-
-- 上界：`ms.upper_bound(x);`  
-  - 功能：第一個 `> x` 的位置  
-  - 時間複雜度：O(log n)
-
-- 取最小：`*ms.begin()`  
-  - 功能：最小值  
-  - 時間複雜度：O(1)
-
-- 取最大：`*prev(ms.end())`  
-  - 功能：最大值  
-  - 時間複雜度：O(1)
-
-- 取大小：`ms.size();`  
-  - 功能：元素數量  
-  - 時間複雜度：O(1)
-
-- 判空：`ms.empty();`  
-  - 功能：是否為空  
-  - 時間複雜度：O(1)
-
-- 清空：`ms.clear();`  
-  - 功能：清除所有元素  
-  - 時間複雜度：O(n)
-
-### 特點
-1. 自動排序、允許重複。  
-2. 注意：`ms.erase(x)` 會刪掉所有 x；要刪一個要用 iterator 版本。
-
----
-
-## map（有序映射 / key -> value）
-
-### 標頭檔
-- `#include <map>`
-
-### 常用操作
-- 宣告：`map<int,int> mp;`  
-  - 功能：key 不重複、會排序  
-  - 時間複雜度：O(1)
-
-- 指派/新增：`mp[key] = val;`  
-  - 功能：設定 key 的值（不存在會自動建立）  
-  - 時間複雜度：O(log n)
-
-- 讀取：`mp[key]`  
-  - 功能：取得 key 的值（不存在會建立並回傳預設值）  
-  - 時間複雜度：O(log n)
-
-- 插入（不覆蓋）：`mp.insert({k, v});`  
-  - 功能：若 k 已存在則不插入  
-  - 時間複雜度：O(log n)
-
-- 查找：`mp.find(k);`  
-  - 功能：找 key（iterator）  
-  - 時間複雜度：O(log n)
-
-- 是否存在：`mp.count(k);`  
-  - 功能：存在回 1，不存在回 0  
-  - 時間複雜度：O(log n)
-
-- 刪除：`mp.erase(k);`  
-  - 功能：刪除 key  
-  - 時間複雜度：O(log n)
-
-- 下界：`mp.lower_bound(k);`  
-  - 功能：第一個 key `>= k` 的位置  
-  - 時間複雜度：O(log n)
-
-- 上界：`mp.upper_bound(k);`  
-  - 功能：第一個 key `> k` 的位置  
-  - 時間複雜度：O(log n)
-
-- 取最小 key：`mp.begin()->first`  
-  - 功能：最小 key  
-  - 時間複雜度：O(1)
-
-- 取最大 key：`prev(mp.end())->first`  
-  - 功能：最大 key  
-  - 時間複雜度：O(1)
-
-- 取大小：`mp.size();`  
-  - 功能：鍵值對數量  
-  - 時間複雜度：O(1)
-
-- 判空：`mp.empty();`  
-  - 功能：是否為空  
-  - 時間複雜度：O(1)
-
-- 清空：`mp.clear();`  
-  - 功能：清除所有鍵值對  
-  - 時間複雜度：O(n)
-
-### 特點
-1. key 會自動排序（平衡樹），適合有序、範圍查詢。  
-2. 注意：`mp[key]` 會自動建立 key；只想判斷存在請用 `find` 或 `count`。
-
----
-
-## unordered_map（雜湊映射 / key -> value，無序）
-
-### 標頭檔
-- `#include <unordered_map>`
-
-### 常用操作
-- 宣告：`unordered_map<long long,int> um;`  
-  - 功能：無序映射  
-  - 時間複雜度：平均 O(1)
-
-- 指派/新增：`um[key] = val;`  
-  - 功能：設定 key 的值（不存在會建立）  
-  - 時間複雜度：平均 O(1)
-
-- 計數常用：`um[key]++;`  
-  - 功能：key 次數 +1（不存在先建立為 0）  
-  - 時間複雜度：平均 O(1)
-
-- 查找：`um.find(key);`  
-  - 功能：找 key（iterator）  
-  - 時間複雜度：平均 O(1)
-
-- 是否存在：`um.count(key);`  
-  - 功能：存在回 1，不存在回 0  
-  - 時間複雜度：平均 O(1)
-
-- 刪除：`um.erase(key);`  
-  - 功能：刪除 key  
-  - 時間複雜度：平均 O(1)
-
-- 取大小：`um.size();`  
-  - 功能：鍵值對數量  
-  - 時間複雜度：O(1)
-
-- 清空：`um.clear();`  
-  - 功能：清除所有鍵值對  
-  - 時間複雜度：O(n)
-
-### 特點
-1. 平均很快（雜湊），但不保證順序。  
-2. 不支援 `lower_bound/upper_bound`。  
-3. `um[key]` 也會自動建立 key（同 map 的陷阱）。
-
----
-
-## unordered_set（雜湊集合，無序）
-
-### 標頭檔
-- `#include <unordered_set>`
-
-### 常用操作
-- 宣告：`unordered_set<int> us;`  
-  - 功能：無序、不重複集合  
-  - 時間複雜度：平均 O(1)
-
-- 插入：`us.insert(x);`  
-  - 功能：插入 x（若已存在不變）  
-  - 時間複雜度：平均 O(1)
-
-- 刪除：`us.erase(x);`  
-  - 功能：刪除 x（若存在）  
-  - 時間複雜度：平均 O(1)
-
-- 查找：`us.find(x);`  
-  - 功能：找 x（iterator）  
-  - 時間複雜度：平均 O(1)
-
-- 是否存在：`us.count(x);`  
-  - 功能：存在回 1，不存在回 0  
-  - 時間複雜度：平均 O(1)
-
-- 取大小：`us.size();`  
-  - 功能：元素數量  
-  - 時間複雜度：O(1)
-
-- 判空：`us.empty();`  
-  - 功能：是否為空  
-  - 時間複雜度：O(1)
-
-- 清空：`us.clear();`  
-  - 功能：清除所有元素  
-  - 時間複雜度：O(n)
-
-### 特點
-1. 平均很快，但無序。  
-2. 適合「查存在 / 去重 / 計數」，要排序或找最接近請改用 `set`。
-
----
-
-## IO 優化
-```cpp
-ios::sync_with_stdio(false);
-cin.tie(nullptr);
+  1. First in first out
+  2. Always use in BFS
