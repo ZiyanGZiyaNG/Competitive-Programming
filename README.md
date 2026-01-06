@@ -19,8 +19,8 @@
 - [LeetCode - 53](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/LeetCode%20-%2053)
 - [LeetCode - 70](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/LeetCode%20-%2070)
 - [LeetCode - 118](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/LeetCode%20-%20118)
-- [LeetCode - 119]()
-- [LeeCode - 120](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/LeetCode%20-%20120)
+- [LeetCode - 119](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/LeetCode%20-%20119)
+- [LeetCode - 120](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/LeetCode%20-%20120)
 
 ### Graph Theory
 
