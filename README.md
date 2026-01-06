@@ -17,7 +17,8 @@
 - [UVa 10684 - The jackpot](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/UVa%2010684%20-%20The%20jackpot)
 - [UVa 10450 — World Cup Noise](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/UVa%2010450%20-%20World%20Cup%20Noise)
 - [LeetCode - 53](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/LeetCode%20-%2053)
-- [LeetCode - 70](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/LeetCode%20-%2070)
+- [LeetCode - 70](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/LeetCode%20-%2070)\
+- [LeetCode - 118](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/LeetCode%20-%20118)
 
 ### Graph Theory
 
