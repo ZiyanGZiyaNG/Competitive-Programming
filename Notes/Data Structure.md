@@ -79,6 +79,8 @@ Size｜ `q.size();`
 
   1. First in first out
   2. Always use in BFS
+ 
+  ---
 
 ### Stack
 
@@ -103,4 +105,78 @@ Size｜ `stk.size();`
 - Features
 
     1. Last in first out
-    2. Normally, we wouldn't use `recursion + vector` instead.
+    2. Normally, we wouldn't use `recursion + vector` instead
+ 
+---
+ 
+
+### Deque
+
+- Header File
+
+    `#include <deque>`
+
+- Common Operations
+
+Anncouncement｜ `deque<int> d;`
+
+Input(end)｜ `d.push_back(x);`
+
+Input(head)｜ `d.push_front(x);`
+
+Remove(end)｜ `d.pop_back();`
+
+Remove(head)｜ `d.pop_front();`
+
+Empty｜ `d.empty();`
+
+Size｜ `d.size();`
+
+- Features
+
+    1. Double-ended queue
+    2. Fast
+ 
+### Set
+
+- Header File
+
+  `#include <set>`
+
+- Common Operations
+
+Anncouncement｜ `set<int> s;`
+
+Insert｜ `s.insert(x);`
+
+Erase｜ `s.erase(x);`
+
+Clear｜ `s.clear();`
+
+Exist｜ `s.count(x);`
+
+Exist｜ `s.find(x);`
+
+Empty｜ `s.empty();`
+
+- Features
+
+    1. Non-repeatable
+    2. Unmodifiable
+    3. Sequentiality
+
+
+ ### Map
+
+ - Header File
+
+     `#include <map>`
+
+- Common Operasions
+
+Anncouncement｜ `map<int, string> m;`
+
+- Features
+
+    1. Key, Value
+    2. Like Array
