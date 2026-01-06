@@ -79,3 +79,28 @@ Size｜ `q.size();`
 
   1. First in first out
   2. Always use in BFS
+
+### Stack
+
+- Header File
+
+     `#include <stack>`
+
+- Common Operations
+
+Anncouncement｜ `stack<int> stk;`
+
+Input｜ `stk.push(x);`
+
+Value｜ `stk.top();`
+
+Remove｜ `stk.pop();`
+
+Empty｜ `stk.empty();`
+
+Size｜ `stk.size();`
+
+- Features
+
+    1. Last in first out
+    2. Normally, we wouldn't use `recursion + vector` instead.
