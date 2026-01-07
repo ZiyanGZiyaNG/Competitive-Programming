@@ -38,6 +38,11 @@
 - [APCS 2017/03 - pB (圖論)](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202017-03%20pB)
 - [APCS 2020/10 - pB (模擬)](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202020-10%20pB)
 - [APCS 2022/10 - pB (建表)](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202022-10%20p)
+- [APCS 2024/01 - pB (二維模擬)](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202024-01%20pB)
+- [APCS 2025/01 - pA (邏輯運算子)](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202025-01%20pA)
+- [APCS 2025/01 - pB (字串)](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202025-01%20pB)
+- [APCS 2025/06 - pA (邏輯運算子)](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202025-06%20pA)
+- [APCS 2025/06 - pB (模擬)](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202025-06%20%20pB)
 
 ### Notes
 - [Algorithm](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Algorithm.md)
