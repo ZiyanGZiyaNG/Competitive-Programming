@@ -38,6 +38,7 @@
 - [APCS 2022/10 - pB (建表)](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202022-10%20p)
 
 ### Notes
+- [Algorithm](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Algorithm.md)
 - [Data Strusture](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Data%20Structure.md)
 
 
