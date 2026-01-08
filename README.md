@@ -44,6 +44,7 @@
 - [APCS 2025/01 - pC (DFS)](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202025-01%20pC)
 - [APCS 2025/06 - pA (邏輯運算子)](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202025-06%20pA)
 - [APCS 2025/06 - pB (模擬)](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202025-06%20%20pB)
+- [APCS 2025/10(M) - pC (MAP)](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/APCS%202025-10(M)%20pC)
 
 ### Notes
 - [Algorithm](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Algorithm.md)
