@@ -5,6 +5,7 @@
 - [LeetCode - 240](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/LeetCode%20-%20240)
 - [LeetCode - 74](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/LeetCode%20-%2074)
 - [LeetCode - 153](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/LeetCode%20-%20153)
+- [LeetCode - 33](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/LeetCode%20-%2033)
 
 ### Dynamic Programming
 - [CSES 1633 - Dice Combinations](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/CSES%201633%20-%20Dice%20Combinations)
