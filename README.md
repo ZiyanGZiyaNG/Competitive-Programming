@@ -1,7 +1,7 @@
 # Competitive-Programming
 
 ### Breadth First Search
-- [111學年度 hgsh 校內賽 pC WAKUWAKU 尋找興奮源 (⌓‿⌓)](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/111%E5%AD%B8%E5%B9%B4%E5%BA%A6%20hgsh%20%E6%A0%A1%E5%85%A7%E8%B3%BD%20pC.%20WAKUWAKU%20%E5%B0%8B%E6%89%BE%E8%88%88%E5%A5%AE%E6%BA%90%20(%E2%8C%93%E2%80%BF%E2%8C%93))
+- [111學年度 hgsh 校內賽 pC WAKUWAKU 尋找興奮源 (⌓‿⌓)](學科能力競賽/)
 - [LeetCode - 240](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/LeetCode%20-%20240)
 - [LeetCode - 74](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/LeetCode%20-%2074)
 - [LeetCode - 153](https://github.com/ZiyanGZiyaNG/Competitive-Programming/tree/main/LeetCode%20-%20153)
