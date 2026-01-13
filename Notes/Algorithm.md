@@ -1,3 +1,7 @@
+### IF YOU WANT YOUR ALGORITHM ABILITY BECOME VERY STRONG I SUGGEST YOU GO TO PRATICE IN LEETCODE
+
+
+
 ## Search Algorithm
 
 ### Liner - Search(Sequential Search)
