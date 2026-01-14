@@ -61,6 +61,7 @@
 ### CPE
 #### 1★
 - [Uva - 100](CPE/1%E2%98%85/Uva%20-%20100.cpp)
+- [Uva - 168](CPE/1%E2%98%85/Uva%20-%20168.cpp)
 
 ### Notes
 - [Algorithm](Notes/Algorithm.md)
