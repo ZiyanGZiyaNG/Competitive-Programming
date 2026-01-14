@@ -58,6 +58,10 @@
 - [APCS 2025/06 - pB (模擬)](APCS/APCS%202025-06%20%20pB)
 - [APCS 2025/10(M) - pC (MAP)](APCS/APCS%202025-10(M)%20pC)
 
+### CPE
+#### 1★
+- [Uva - 100](CPE/1%E2%98%85/Uva%20-%20100.cpp)
+
 ### Notes
 - [Algorithm](Notes/Algorithm.md)
 - [Data Strusture](Notes/Data%20Structure.md)
