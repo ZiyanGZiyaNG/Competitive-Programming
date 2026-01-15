@@ -63,6 +63,7 @@
 - [Uva - 100](CPE/1%E2%98%85/Uva%20-%20100.cpp)
 - [Uva - 168](CPE/1%E2%98%85/Uva%20-%20168.cpp)
 - [Uva - 272](CPE/1%E2%98%85/Uva%20-%20272.cpp)
+- [Uva - 299](CPE/1%E2%98%85/Uva%20-%20299.cpp)
 
 ### Notes
 - [Algorithm](Notes/Algorithm.md)
