@@ -69,6 +69,7 @@
 ### Notes
 - [Algorithm](Notes/Algorithm.md)
 - [Data Strusture](Notes/Data%20Structure.md)
+- [Tips](Notes/Tips.md)
 
 
 ### TOI
