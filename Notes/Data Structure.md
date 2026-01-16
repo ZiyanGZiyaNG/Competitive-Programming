@@ -10,7 +10,7 @@
 ## 目錄
 
 1. [資料結構概論](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Data%20Structure.md#1-%E8%B3%87%E6%96%99%E7%B5%90%E6%A7%8B%E6%A6%82%E8%AB%96)
-2. Array & VLA  
+2. [Array & VLA](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Data%20Structure.md#2-array--vla)  
 3. Vector  
 4. Stack  
 5. Queue  
