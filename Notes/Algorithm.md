@@ -123,6 +123,7 @@ bool bfs(int sx, int sy, int gx, int gy)
 	
 	while (!q.empty())
 	{
+		if (mp[nx][ny] == mp[gx][gy]) return true;
 		auto cur = q.front();
 		q.pop();
 		int x = cur.first;
@@ -140,6 +141,7 @@ bool bfs(int sx, int sy, int gx, int gy)
 			q.push({nx, ny});
 		}
 	}
+retrun false;
 }
 ```
 
