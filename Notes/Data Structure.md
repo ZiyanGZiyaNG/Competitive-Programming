@@ -1,182 +1,125 @@
+# 資料結構 Data Structures
+
+本講義以 **競賽程式設計（大學程式設計先修檢定／大學程式能力檢定／學科能力競賽／大學演算法、資料結構）** 為導向，  
+系統性介紹常見資料結構的 **定義、特性、時間複雜度與使用時機**。
+
+<img width="320" height="180" alt="image" src="https://github.com/user-attachments/assets/8cc490db-bac3-47ae-aaf5-5ce73e8456b1" />
+
+---
+
+## 目錄
+
+1. 資料結構概論  
+2. Array & VLA  
+3. Vector  
+4. Stack  
+5. Queue  
+6. Deque  
+7. Set & Multiset  
+8. Map  
+9. Unordered Set & Unordered Map  
+10. Linked List  
+11. Priority Queue  
+12. Disjoint Set（Union-Find）
+
+---
+
+## 1. 資料結構概論
+
+### What is 資料結構？
+
+資料結構（Data Structure）是用來  
+**組織、儲存、管理與存取資料**的一種方式。
+
+透過合適的資料結構，可以讓資料在  
+查詢、插入、刪除、更新等操作上更有效率，  
+並使演算法設計更加清楚、可控。
+
+---
+
+### 為什麼資料結構很重要？
+
+- **直接影響時間複雜度（Big-O）**  
+- **是演算法設計的基礎**  
+- **競賽中常因資料結構選錯而 TLE / WA**  
+- **功能相同 ≠ 效率相同**
+
+---
+
+
+
+## 2. Array & VLA
+
+### Array（固定長度陣列）
+
+#### 特性
+
+- 記憶體連續配置  
+- 隨機存取速度快  
+- 長度在宣告後不可改變  
+- 是多數資料結構的底層基礎  
+
+#### 時間複雜度
+
+- 存取指定索引：`O(1)`  
+- 修改指定索引：`O(1)`  
+- 搜尋指定值：`O(n)`  
+- 插入／刪除：`O(n)`  
+
+
+#### 語法與常用用法
+
+**一維陣列宣告**
+```cpp
+int a[10];
+int a[5] = {1, 2, 3, 4, 5};
+```
+
+**二維陣列宣告**
+```cpp
+int b[3][4];
+int b[2][3] = {{1,2,3},{4,5,6}};
+```
+
+**索引存取**
+```cpp
+a[i]
+b[i][j]
+```
+---
+
 ### VLA
 
-- Header File
+#### 特點
 
-    `NO`
+- 基本跟Array一樣，只是長度放變數
+- 為`c99`的語法，在C++中是不合法的，但某些編譯器是合法可用的
 
-- Common Operations
+#### 時間複雜度
 
-Announcement(One-dimensional)｜ `int a[n];`
+- 存取指定索引：`O(1)`  
+- 修改指定索引：`O(1)`  
+- 搜尋指定值：`O(n)`  
+- 插入／刪除：`O(n)`
 
-Announcement(Two-dimensional)｜ `int a[r][c];`
+#### 語法與常用用法
 
-Value｜ `a[i];` *i -> index
+**一維陣列宣告**
+```cpp
+int a[10];
+int a[5] = {1, 2, 3, 4, 5};
+```
 
-- Features
+**二維陣列宣告**
+```cpp
+int b[3][4];
+int b[2][3] = {{1,2,3},{4,5,6}};
+```
 
-  1. Easy
-  2. This is illegal in C++ (Maybe will CE)
-  3. Can use `int` or `string`
-
+**索引存取**
+```cpp
+a[i]
+b[i][j]
+```
 ---
 
-### Vector
-
-- Header File
-
-   `#include <vector>`
-
-- Common Operations
-
-Anncouncement(One-dimensional)｜ `vector<int> v(size, default value);` *size and default value can neglect
-
-Anncouncement(Two-dimensional)｜ `vector<vector<int>> v(size, default value);` *size and default value can neglect
-
-Anncouncement(Pair) ｜ `vector<pair<int, int>> v(size, default value);` *size and default value can neglect
-
-Input｜ `v.push_bacK(x);`
-
-Input｜ `v.emplace_back(x);` (Fast than `v.push_back(x);`)
-
-Clear｜ `v.clear();`
-
-Size｜ `v.size();`
-
-Empty｜ `v.empty();`
-
-Value｜ `v[i];` *i -> index
-
-- Features
-
-  1. Can change array length
-  2. Only pop push at the end
-  3. Save space
-  4. Inefficient
-
----
- 
-### Queue
-
-- Header File
-
-   `#include <queue>`
-
-- Common Operations
-
-Anncouncement｜ `queue<int> q;`
-
-Input｜ `q.push(x);`
-
-Value｜ `q.front();`
-
-Remove｜ `q.pop();`
-
-Empty｜ `q.empty();`
-
-Size｜ `q.size();`
-
-- Features
-
-  1. First in first out
-  2. Always use in BFS
- 
-  ---
-
-### Stack
-
-- Header File
-
-     `#include <stack>`
-
-- Common Operations
-
-Anncouncement｜ `stack<int> stk;`
-
-Input｜ `stk.push(x);`
-
-Value｜ `stk.top();`
-
-Remove｜ `stk.pop();`
-
-Empty｜ `stk.empty();`
-
-Size｜ `stk.size();`
-
-- Features
-
-    1. Last in first out
-    2. Normally, we wouldn't use `recursion + vector` instead
- 
----
- 
-
-### Deque
-
-- Header File
-
-    `#include <deque>`
-
-- Common Operations
-
-Anncouncement｜ `deque<int> d;`
-
-Input(end)｜ `d.push_back(x);`
-
-Input(head)｜ `d.push_front(x);`
-
-Remove(end)｜ `d.pop_back();`
-
-Remove(head)｜ `d.pop_front();`
-
-Empty｜ `d.empty();`
-
-Size｜ `d.size();`
-
-- Features
-
-    1. Double-ended queue
-    2. Fast
- 
-### Set
-
-- Header File
-
-  `#include <set>`
-
-- Common Operations
-
-Anncouncement｜ `set<int> s;`
-
-Insert｜ `s.insert(x);`
-
-Erase｜ `s.erase(x);`
-
-Clear｜ `s.clear();`
-
-Exist｜ `s.count(x);`
-
-Exist｜ `s.find(x);`
-
-Empty｜ `s.empty();`
-
-- Features
-
-    1. Non-repeatable
-    2. Unmodifiable
-    3. Sequentiality
-
-
- ### Map
-
- - Header File
-
-     `#include <map>`
-
-- Common Operasions
-
-Anncouncement｜ `map<int, string> m;`
-
-- Features
-
-    1. Key, Value
-    2. Like Array
