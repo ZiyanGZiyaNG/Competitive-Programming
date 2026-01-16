@@ -106,6 +106,41 @@ int binary(int n, int a[], int t)
 - Code
 
 ```cpp
+// <global>
+int n, m;
+int dx[4] = {1, 0, -1, 0};
+int dy[4] = {0, 1, 0, -1};
+bool vis[1e9][1e9];
+int mp[1e9][1e9];
+// </global>
+
+bool bfs(int sx, int sy, int gx, int gy)
+{
+	memset(vis, 0, sizeof(vis)); // #include <cstring>
+	queue<pair<int, int>> q; // #include <queue>
+	q.push({sx, sy});
+	vis[sx][sy] = true;
+	
+	while (!q.empty())
+	{
+		auto cur = q.front();
+		q.pop();
+		int x = cur.first;
+		int y = cur.second;
+		
+		for (int d = 0; d < 4; d++)
+		{
+			int nx = x + dx[d];
+			int ny = y + dy[d];
+			
+			if (vis[nx][ny]) continue;
+			if (nx >= n or nx < 0 or ny >= m or ny < 0) continue;
+			
+			vis[nx][ny] = true;
+			q.push({nx, ny});
+		}
+	}
+}
 ```
 
 ### STL
