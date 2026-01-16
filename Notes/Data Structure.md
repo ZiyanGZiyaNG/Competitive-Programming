@@ -11,7 +11,7 @@
 
 1. [資料結構概論](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Data%20Structure.md#1-%E8%B3%87%E6%96%99%E7%B5%90%E6%A7%8B%E6%A6%82%E8%AB%96)
 2. [Array & VLA](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Data%20Structure.md#2-array--vla)  
-3. Vector  
+3. [Vector]()
 4. Stack  
 5. Queue  
 6. Deque  
@@ -35,7 +35,6 @@
 查詢、插入、刪除、更新等操作上更有效率，  
 並使演算法設計更加清楚、可控。
 
----
 
 ### 為什麼資料結構很重要？
 
@@ -69,19 +68,19 @@
 
 #### 語法與常用用法
 
-**一維陣列宣告**
+*一維陣列宣告*
 ```cpp
 int a[10];
 int a[5] = {1, 2, 3, 4, 5};
 ```
 
-**二維陣列宣告**
+*二維陣列宣告*
 ```cpp
 int b[3][4];
 int b[2][3] = {{1,2,3},{4,5,6}};
 ```
 
-**索引存取**
+*索引存取*
 ```cpp
 a[i]
 b[i][j]
@@ -104,22 +103,77 @@ b[i][j]
 
 #### 語法與常用用法
 
-**一維陣列宣告**
+*一維陣列宣告*
 ```cpp
 int a[10];
 int a[5] = {1, 2, 3, 4, 5};
 ```
 
-**二維陣列宣告**
+*二維陣列宣告*
 ```cpp
 int b[3][4];
 int b[2][3] = {{1,2,3},{4,5,6}};
 ```
 
-**索引存取**
+*索引存取*
 ```cpp
 a[i]
 b[i][j]
 ```
 ---
 
+## 3. Vector (動態陣列)
+
+### 特點
+
+- 可以動態調整陣列大小
+- 標準容器(STL)
+- VLA的接班人
+- 需要標頭檔 `#include <vector>`
+
+### 時間複雜度
+
+- 存取指定索引：`O(1)`
+- 尾端插入：`O(1)`
+- 尾端刪除：`O(1)`
+- 任意位置插入／刪除：`O(n)`
+- 搜尋指定值：`O(n)`
+
+### 語法與常用用法
+
+*基本宣告*
+```cpp
+vector<int> v(長度, 初始值);
+```
+
+*加入元素*
+```cpp
+v.push_back(x);
+v.emplace_back(x) // 較快;
+```
+
+*刪除尾端元素*
+```cpp
+v.pop_back();
+```
+
+*索引存取*
+```cpp
+v[i];
+```
+
+重設大小
+```cpp
+v.resize()
+```
+
+*取得大小*
+```cpp
+v.size();
+```
+
+*清空 Vector*
+```cpp
+v.clear();
+```
+  
