@@ -94,7 +94,6 @@ int binary(int n, int a[], int t)
  
 - Efficiency
 
-## Sort Algorithm
 
 | Case    | Time Complexity |
 |---------|:-----------------: |
@@ -144,6 +143,30 @@ bool bfs(int sx, int sy, int gx, int gy)
 retrun false;
 }
 ```
+
+---
+
+
+### Deepth-First Search
+
+- Features
+	1. Low efficiency
+
+- Efficiency
+
+
+| Case    | Time Complexity |
+|---------|:-----------------: |
+| Best    | $O(1)$          |
+| Average | $O(V + E) or O(m * n)$          |
+| Worst   | $O(V + E) or O(m * n)$          |
+
+- Code
+
+```cpp
+```
+
+
 
 ### STL
 
