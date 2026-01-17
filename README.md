@@ -68,6 +68,7 @@
 - [Uva - 948](CPE/1%E2%98%85/Uva%20-%20948.cpp)
 - [Uva - 10008](CPE/1%E2%98%85/Uva%20-%2010008.cpp)
 - [Uva - 10019](CPE/1%E2%98%85/Uva%20-%2010019.cpp)
+- [Uva - 10035](CPE/1%E2%98%85/Uva%20-%2010035.cpp)
 
 ### Notes
 - [Algorithm](Notes/Algorithm.md)
