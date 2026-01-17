@@ -12,7 +12,7 @@
 1. [資料結構概論](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Data%20Structure.md#1-%E8%B3%87%E6%96%99%E7%B5%90%E6%A7%8B%E6%A6%82%E8%AB%96)
 2. [Array & VLA](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Data%20Structure.md#2-array--vla)  
 3. [Vector](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Data%20Structure.md#3-vector-%E5%8B%95%E6%85%8B%E9%99%A3%E5%88%97)
-4. Queue  
+4. [Queue](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Data%20Structure.md#4-queue-%E4%BD%87%E5%88%97)
 5. Stack
 6. Deque  
 7. Set & Multiset  
@@ -56,15 +56,15 @@
 - 是多數資料結構的底層基礎
 
 
-#### 語法與常用用法
+#### 語法
 
-**一維陣列宣告**｜
+**一維陣列**｜
 
 ```int a[10];```
 
 ```int a[5] = {1, 2, 3, 4, 5};```
 
-**二維陣列宣告**｜
+**二維陣列**｜
 
 ```int b[3][4];```
 
@@ -87,15 +87,15 @@
 - 為`c99`的語法，在C++中是不合法的，但某些編譯器是合法可用的
 
 
-#### 語法與常用用法
+#### 語法
 
-**一維陣列宣告**｜
+**一維陣列**｜
 
 ```int a[10];```
 
 ```int a[5] = {1, 2, 3, 4, 5};```
 
-**二維陣列宣告**｜
+**二維陣列**｜
 
 ```int b[3][4];```
 
@@ -121,9 +121,9 @@
 - 需要標頭檔 `#include <vector>`
 
 
-### 語法與常用用法
+### 語法
 
-**基本宣告**｜ 
+**宣告**｜ 
 ```vector<int> v(長度, 初始值);```
 
 
@@ -163,8 +163,7 @@
 - 需要標頭檔`#include <queue>`
 
 
-### 語法與常用用法
-
+### 語法
 **宣告**|
 ```queue<int> q;```
 
@@ -177,12 +176,38 @@
 **取值**|
 ```q.front();```
 
-**重設大小**｜
-```q.resize();```
-
 **取得大小**｜
 ```q.size();```
 
-**清空 Vector**｜
+**清空**｜
 ```q.clear();```
 
+## 5.Stack (堆疊)
+
+### 特點
+
+- 後進先出(Last In First Out)
+- 像書本堆疊
+- 有些人在DFS會用到(但筆者主要用)
+- 需要標頭檔`#include <stack>`
+- 在競程中其實不太喜歡用這個，大部分人反而會用`vector`來取代
+
+### 語法
+
+**宣告**|
+```stack<int> stk;```
+
+**插入**|
+```stk.push(x);```
+
+**取值**|
+```stk.top();```
+
+**刪除**|
+```stk.pop();```
+
+**取得大小**｜
+```stk.size();```
+
+**清空**｜
+```stk.clear();```
