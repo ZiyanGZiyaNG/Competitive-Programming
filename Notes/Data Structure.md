@@ -12,8 +12,8 @@
 1. [資料結構概論](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Data%20Structure.md#1-%E8%B3%87%E6%96%99%E7%B5%90%E6%A7%8B%E6%A6%82%E8%AB%96)
 2. [Array & VLA](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Data%20Structure.md#2-array--vla)  
 3. [Vector](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Data%20Structure.md#3-vector-%E5%8B%95%E6%85%8B%E9%99%A3%E5%88%97)
-4. Stack  
-5. Queue  
+4. Queue  
+5. Stack
 6. Deque  
 7. Set & Multiset  
 8. Map  
@@ -55,12 +55,6 @@
 - 長度在宣告後不可改變
 - 是多數資料結構的底層基礎
 
-#### 時間複雜度
-
-- 存取指定索引：`O(1)`
-- 修改指定索引：`O(1)`
-- 搜尋指定值：`O(n)`
-- 插入／刪除：`O(n)`
 
 #### 語法與常用用法
 
@@ -92,12 +86,6 @@
 - 基本跟Array一樣，只是長度放變數
 - 為`c99`的語法，在C++中是不合法的，但某些編譯器是合法可用的
 
-#### 時間複雜度
-
-- 存取指定索引：`O(1)`
-- 修改指定索引：`O(1)`
-- 搜尋指定值：`O(n)`
-- 插入／刪除：`O(n)`
 
 #### 語法與常用用法
 
@@ -105,7 +93,7 @@
 
 ```int a[10];```
 
-```int a[5] = {1, 2, 3, 4, 5};```｜
+```int a[5] = {1, 2, 3, 4, 5};```
 
 **二維陣列宣告**｜
 
@@ -132,13 +120,6 @@
 - VLA的接班人
 - 需要標頭檔 `#include <vector>`
 
-### 時間複雜度
-
-- 存取指定索引：`O(1)`
-- 尾端插入：`O(1)`
-- 尾端刪除：`O(1)`
-- 任意位置插入／刪除：`O(n)`
-- 搜尋指定值：`O(n)`
 
 ### 語法與常用用法
 
@@ -170,4 +151,38 @@
 
 **清空 Vector**｜
 ```v.clear();```
+
+
+## 4. Queue (佇列)
+
+### 特點
+
+- 先進先出(First In First Out)
+- 像排隊
+- 在BFS中會用到
+- 需要標頭檔`#include <queue>`
+
+
+### 語法與常用用法
+
+**宣告**|
+```queue<int> q;```
+
+**插入**|
+```q.push(x);```
+
+**刪除**|
+```q.pop();```
+
+**取值**|
+```q.front();```
+
+**重設大小**｜
+```q.resize();```
+
+**取得大小**｜
+```q.size();```
+
+**清空 Vector**｜
+```q.clear();```
 
