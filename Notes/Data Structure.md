@@ -13,7 +13,7 @@
 2. [Array & VLA](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Data%20Structure.md#2-array--vla)  
 3. [Vector](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Data%20Structure.md#3-vector-%E5%8B%95%E6%85%8B%E9%99%A3%E5%88%97)
 4. [Queue](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Data%20Structure.md#4-queue-%E4%BD%87%E5%88%97)
-5. Stack
+5. [Stack](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Data%20Structure.md#5stack-%E5%A0%86%E7%96%8A)
 6. Deque  
 7. Set & Multiset  
 8. Map  
