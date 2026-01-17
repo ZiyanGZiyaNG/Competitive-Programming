@@ -15,7 +15,7 @@
 4. [Queue](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Data%20Structure.md#4-queue-%E4%BD%87%E5%88%97)
 5. [Stack](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Data%20Structure.md#5stack-%E5%A0%86%E7%96%8A)
 6. [Deque](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Data%20Structure.md#6deque-%E9%9B%99%E5%90%91%E4%BD%87%E5%88%97)  
-7. Set & Multiset  
+7. [Set & Multiset](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Data%20Structure.md#7set--multiset)  
 8. Map  
 9. Unordered Set & Unordered Map  
 10. Linked List  
