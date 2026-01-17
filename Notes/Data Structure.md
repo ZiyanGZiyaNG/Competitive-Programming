@@ -211,3 +211,30 @@
 
 **清空**｜
 ```stk.clear();```
+
+## 6.Deque (雙向佇列)
+
+### 特點
+- Double-ended queue
+- 相較Queue可兩端插入
+- 需要標頭檔`#include <deque>`
+- 基本上用不太到
+<img width="320" height="180" alt="image" src="https://github.com/user-attachments/assets/74340045-d1e8-4a9a-a163-3acc981cdda9" />
+
+
+### 語法
+
+**宣告**|
+```deque<int> de;```
+
+**插入到尾端**|
+```de.push_back(x);```
+
+**插入到頭端**|
+```de.push_front(x);```
+
+**刪除尾端**|
+```de.pop_back();```
+
+**刪除頭端**|
+```de.pop_front();```
