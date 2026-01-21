@@ -1,5 +1,7 @@
 # Competitive-Programming
 
+### Sortint
+- [LeetCode - 169](LeetCode/LeetCode%20-%20169c)
 
 ### Depth First Search
 - [LeetCode - 100](LeetCode/LeetCode%20-%20100)
