@@ -1,6 +1,6 @@
 # Competitive-Programming
 
-### Sortint
+### Sorting
 - [LeetCode - 169](LeetCode/LeetCode%20-%20169c)
 
 ### Depth First Search
