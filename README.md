@@ -94,3 +94,4 @@
 ### 雜項
 - [LeetCode - 169](LeetCode/LeetCode%20-%20169c)
 - [LeetCode - 100](LeetCode/LeetCode%20-%20100)
+- [訊息排排隊-1 - shanC](%E9%9B%9C%E9%A0%85/%E8%A8%8A%E6%81%AF%E6%8E%92%E6%8E%92%E9%9A%8A-1%20-%20ShanC.cpp)
