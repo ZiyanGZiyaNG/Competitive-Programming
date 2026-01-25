@@ -1,11 +1,5 @@
 # Competitive-Programming
 
-### Sorting
-- [LeetCode - 169](LeetCode/LeetCode%20-%20169c)
-
-### Depth First Search
-- [LeetCode - 100](LeetCode/LeetCode%20-%20100)
-
 ### Breadth First Search
 - [111學年度 hgsh 校內賽 pC WAKUWAKU 尋找興奮源 (⌓‿⌓)](學科能力競賽/111學年度%20hgsh%20校內賽%20pC.%20WAKUWAKU%20尋找興奮源%20(⌓‿⌓))
 - [LeetCode - 240](LeetCode/LeetCode%20-%20240)
@@ -96,3 +90,7 @@
 - [104學年度 板橋高中 校內 資訊學科能力競賽 （一）](%E5%AD%B8%E7%A7%91%E8%83%BD%E5%8A%9B%E7%AB%B6%E8%B3%BD/104%E5%AD%B8%E5%B9%B4%E5%BA%A6%20%E6%9D%BF%E6%A9%8B%E9%AB%98%E4%B8%AD%20%E6%A0%A1%E5%85%A7%20%E8%B3%87%E8%A8%8A%E5%AD%B8%E7%A7%91%E8%83%BD%E5%8A%9B%E7%AB%B6%E8%B3%BD%20%EF%BC%88%E4%B8%80%EF%BC%89pA.cpp)
 - [101學年度 北基區 資訊學科能力競賽 pA](%E5%AD%B8%E7%A7%91%E8%83%BD%E5%8A%9B%E7%AB%B6%E8%B3%BD/101%E5%AD%B8%E5%B9%B4%E5%BA%A6%20%E5%8C%97%E5%9F%BA%E5%8D%80%20%E8%B3%87%E8%A8%8A%E5%AD%B8%E7%A7%91%E8%83%BD%E5%8A%9B%E7%AB%B6%E8%B3%BD%20pA.cpp)
 - [101學年度 台北市 資訊學科能力競賽 pB](%E5%AD%B8%E7%A7%91%E8%83%BD%E5%8A%9B%E7%AB%B6%E8%B3%BD/101%E5%AD%B8%E5%B9%B4%E5%BA%A6%20%E5%8F%B0%E5%8C%97%E5%B8%82%20%E8%B3%87%E8%A8%8A%E5%AD%B8%E7%A7%91%E8%83%BD%E5%8A%9B%E7%AB%B6%E8%B3%BD%20pB.cpp)
+
+### 雜項
+- [LeetCode - 169](LeetCode/LeetCode%20-%20169c)
+- [LeetCode - 100](LeetCode/LeetCode%20-%20100)
