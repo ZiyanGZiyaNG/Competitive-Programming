@@ -102,6 +102,7 @@
 - [LeetCode - 1952](LeetCode/LeetCode%20-%201952.cpp)
 - [LeetCode - 1979](LeetCode/LeetCode%20-%201979.cpp)
 - [LeetCode - 2413](LeetCode/LeetCode%20-%202413.cpp)
+- [LeetCode - 2427](LeetCode/LeetCode%20-%202427.cpp)
 - [訊息排排隊-1 - shanC](%E9%9B%9C%E9%A0%85/%E8%A8%8A%E6%81%AF%E6%8E%92%E6%8E%92%E9%9A%8A-1%20-%20ShanC.cpp)
 
 ### Atcoder
