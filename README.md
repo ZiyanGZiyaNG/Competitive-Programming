@@ -25,6 +25,7 @@
 - [LeetCode - 2427](LeetCode/LeetCode%20-%202427.cpp)
 
 ### APCS
+- [APCS 2016/03 - pC (模擬)](APCS/APCS%202016-03%20pC)
 - [APCS 2016/03 - pD (二元樹)](APCS/APCS%202016-03%20pD)
 - [APCS 2016/06 - pB (類BFS)](APCS/APCS%202016-06%20pB)
 - [APCS 2016/10 - pC (模擬)](APCS/APCS%202016-10%20pC)
