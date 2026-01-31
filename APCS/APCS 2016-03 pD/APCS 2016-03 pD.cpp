@@ -11,8 +11,9 @@ int dfs(int d)
 {
     int best1 = 0, best2 = 0; 
 
-    for (int v : child[d])
+    for (int i = 0; i < child[d].size(); i++)
     {
+    	int v = child[d][i];
         int h = dfs(v) + 1;
         if (h > best1)
         {
