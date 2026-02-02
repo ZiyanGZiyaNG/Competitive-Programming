@@ -1,5 +1,4 @@
 # Competitive-Programming
-dasdasd
 ### LeetCode
 - [LeetCode - 240](LeetCode/LeetCode%20-%20240)
 - [LeetCode - 74](LeetCode%20-%2074)
@@ -38,6 +37,7 @@ dasdasd
 - [APCS 2018/10 - pD (阿災](APCS/APCS%202018-10%20pIDK)
 - [APCS 2020/07 - pB (模擬)](APCS/APCS%202020-07%20pB)
 - [APCS 2020/10 - pB (模擬)](APCS/APCS%202020-10%20pB)
+- [APCS 2020/10 - pD (BIT)](APCS/APCS%202020-10%20pD)
 - [APCS 2020/10 - pC (動態規劃)](APCS/APCS%202020-10%20pC)
 - [APCS 2022/10 - pB (建表)](APCS/APCS%202022-10%20p)
 - [APCS 2022/10 - pD (二分搜+BFS)](APCS/APCS%202022-10%20pD)
