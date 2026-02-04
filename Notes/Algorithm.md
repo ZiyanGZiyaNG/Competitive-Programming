@@ -9,6 +9,11 @@
 ---
 
 ## 目錄
+
+1.[簡述演算法](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/Notes/Algorithm.md#1%E7%B0%A1%E8%BF%B0%E6%BC%94%E7%AE%97%E6%B3%95)
+
+2.[複雜度]()
+
 ---
 
 ## 1.簡述演算法
