@@ -1,247 +1,45 @@
-### IF YOU WANT YOUR ALGORITHM ABILITY BECOME VERY STRONG I SUGGEST YOU GO TO PRATICE IN LEETCODE
-[LeetCode](https://leetcode.com/problemset/)
+# 演算法 Algorithm
 
+本講義以 **競賽程式設計（大學程式設計先修檢定／大學程式能力檢定／學科能力競賽／大學演算法、資料結構）** 為導向，  
+系統性介紹常見演算法的 **原理、使用時機、複雜度等**。
 
+<img width="480" height="270" alt="image" src="https://github.com/user-attachments/assets/33c58b57-63ff-40e8-8ef1-80ddd2e74d56" />
 
-## Search Algorithm
-
-### Liner - Search(Sequential Search)
-
-- Features
-  1. Intuitive
-  2. No sorting required
-  3. Brute Force
- 
-- Efficiency
-
-| Case    | Time Complexity |
-|---------|:-----------------: |
-| Best    | $O(1)$          |
-| Average | $O(n)$          |
-| Worst   | $O(n)$          |
-
-
-- Code
-
-```cpp
-int linear(int a[], int n, int t)
-{
-    for (int i = 0; i < n; i++)
-    {
-        if (a[i] == t)
-        {
-            return i;  
-        }
-    }
-    return -1;    
-}
-```
 
 ---
 
-### Binary Search 
-
-- Features
-  1. Fast
-  2. Divide
-  3. Need Sort
- 
-- Efficiency
-
-| Case    | Time Complexity |
-|---------|:-----------------: |
-| Best    | $O(1)$          |
-| Average | $O(log(n))$          |
-| Worst   | $O(log(n))$          |
-
-- Code
-
-```cpp
-int binary(int n, int a[], int t)
-{
-    int left = 0, right = n - 1;
-
-    while (left <= right)
-    {
-        int now = left + (right - left) / 2;
-
-        if (a[now] == t)
-        {
-            return now;        
-        }
-        else if (a[now] > t)
-        {
-            right = now - 1;  
-        }
-        else
-        {
-            left = now + 1;    
-        }
-    }
-
-    return -1;               
-}
-```
-
---- 
-
-
-### Breadth-First Search
-
-- Features
-  1. Can in Binary Tree and Graph
-  2. Use lots of memorize
- 
-- Efficiency
-
-
-| Case    | Time Complexity |
-|---------|:-----------------: |
-| Best    | $O(1)$          |
-| Average | $O(V + E) or O(m * n)$          |
-| Worst   | $O(V + E) or O(m * n)$          |
-
-
-- Code
-
-```cpp
-// <global>
-int n, m;
-int dx[4] = {1, 0, -1, 0};
-int dy[4] = {0, 1, 0, -1};
-bool vis[1e9][1e9];
-int mp[1e9][1e9];
-// </global>
-
-bool bfs(int sx, int sy, int gx, int gy)
-{
-	memset(vis, 0, sizeof(vis)); // #include <cstring>
-	queue<pair<int, int>> q; // #include <queue>
-	q.push({sx, sy});
-	vis[sx][sy] = true;
-	
-	while (!q.empty())
-	{
-		if (mp[nx][ny] == mp[gx][gy]) return true;
-		auto cur = q.front();
-		q.pop();
-		int x = cur.first;
-		int y = cur.second;
-		
-		for (int d = 0; d < 4; d++)
-		{
-			int nx = x + dx[d];
-			int ny = y + dy[d];
-			
-			if (vis[nx][ny]) continue;
-			if (nx >= n or nx < 0 or ny >= m or ny < 0) continue;
-			
-			vis[nx][ny] = true;
-			q.push({nx, ny});
-		}
-	}
-retrun false;
-}
-```
-
+## 目錄
 ---
 
+## 1.簡述演算法
 
-### Deepth-First Search
-
-- Features
-	1. Low efficiency
-
-- Efficiency
+### 為什麼需要演算法?
+在競程中往往會有限制秒數，而在大部分時間暴力解是不會過的所以我們需要用演算法來壓縮解決問題的時間
 
 
-| Case    | Time Complexity |
-|---------|:-----------------: |
-| Best    | $O(1)$          |
-| Average | $O(V + E) or O(m * n)$          |
-| Worst   | $O(V + E) or O(m * n)$          |
+## 2.複雜度 Complexity
 
-- Code
+### 1.複雜度
+複雜度是用來估算這個程式的美醜，我們通常形容一個有好的複雜度的程式稱為美麗(對!競程選手都這樣的)。那複雜度有兩種型態一種是時間複雜度(Time complexity)，另一種是空間複雜度(Space complexity)，那通常俗稱的複雜度是在指時間複雜度。
 
-```cpp
-```
+### 2.複雜度的表示
+現在大多使用的 $big O$ (可以念`big o`或`big of o`抑或者`O`)來表示複雜度，那在複雜度的紀錄我們只會記錄最高次方像 $n ^ 3 + 3n ^ 2$，這樣只會記錄 $O(n ^ 3)$
 
+### 3.常見複雜度
+以下會解紹幾種常見的複雜度
 
+ - $O(1)$ 常數時間，`if`、`cin`、`cout`、陣列讀取
+ - $O(n)$ 線性時間，簡易的陣列查找
+ - $O(logn)$ 對數時間，二分搜尋
 
-### STL
+### 4.複雜度的估算
+在比賽中我們會看到題目要求的時間像
 
-- Features
-  1. Easy
-  2. Need `#include <algorithm>`
- 
-- Efficiency
+<img width="249" height="436" alt="Screenshot 2026-02-04 at 16 06 54" src="https://github.com/user-attachments/assets/1e54ad62-479c-48d8-b140-4c4a743be761" />
 
-| Case    | Time Complexity |
-|---------|:-----------------: |
-| Best    | $O(log(n))$          |
-| Average | $O(log(n))$          |
-| Worst   | $O(log(n))$          |
+必須要在時間內跑完不然是不會AC的只會拿到TLE
 
-- Code
+那我就先得估算會不會跑太久，通常我們會以1秒可以跑1e8作為估算，當然這個也會應為OJ的伺服器效能而產生影響
 
-```cpp
-// VLA
-int a[n];
-sort(a, a + n);
-
-// Vector
-vector<int> a(n);
-sort(a.begin(), a.end(();
-```
-
----
-
-
-### Bubble Sort
-
-- Features
-  1. Stable Sorting
- 
-- Efficiency
-
-| Case    | Time Complexity |
-|---------|:-----------------: |
-| Best    | $O(n)$          |
-| Average | $O(n ^ 2)$          |
-| Worst   | $O(n ^ 2)$          |
-
-- Code
-
-```cpp
-void bubble(int a[], int n)
-{
-    for (int i = 0; i < n - 1; i++)
-    {
-        bool s = false;
-        for (int j = 1; j < n - i; j++)
-        {
-            if (a[j - 1] > a[j])
-            {
-                swap(a[j - 1], a[j]);
-                s = true;
-            }
-        }
-        if (!s) break; 
-    }
-}
-```
-
----
-
-
-
-
-
-
-
-
-
-
-
-
-<div align="center">Written by ZiyanGZiyaNG in 2026</div>
+所以如果一個程式的複雜度是 $O(n) 0 <= n <= 1000000$ 限制秒數為一秒，這樣你可以放心不會拿到TLE
+但如果是 $O(nm) 0 <= n、m <= 1000000$，這樣的話就不一定了喔
