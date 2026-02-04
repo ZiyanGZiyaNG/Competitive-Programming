@@ -126,7 +126,7 @@ while (l < r)
 ```
 
 
-### 3.深度搜尋演算法 (Deepth-First Seartch)
+### 3.深度搜尋演算法 (Deepth-First Seartch, DFS)
 一直往下搜尋直到搜尋到最底部再返回走別條分支，可用於 **樹** 、 **二維圖** 、 **字串**  
 複雜度為 $O(nm)$ 但會因為剪枝的關係而產生變化，所以複雜度不一定
 
@@ -190,7 +190,7 @@ void dfs(int x, int y)
 }
 ```
 
-### 4.廣度優先搜尋演算法 (Breeth-First Seartch)
+### 4.廣度優先搜尋演算法 (Breeth-First Seartch, BFS)
 跟DFS相反的一種演算法，一種是一路搜尋到最底部，一種是慢慢往外擴  
 BFS會探索的區域會比DFS多出很多  
 複雜度一樣為 $O(nm)$ ，但不會像DFS有剪枝改變複雜度
@@ -226,5 +226,46 @@ void bfs(int sx, int sy) // sx = 0, sy = 0
 			q.push({xx, yy});
 		}
 	}
+}
+```
+
+---
+
+## 4.動態規劃 (Dynamic Programming, DP)
+動態規劃不能說是一種演算法，只能說他是一種演算法的精神，靠個前一項的數據來改變  
+DP最重要的是轉移式 $dp[i] = dp[i - 1] + 10$ (我隨便舉例的，不可能出這樣)  
+
+這邊我將用一個簡單的例子來展示DP的魅力  
+這題是經典的青蛙問題  
+題目｜[Atcoder dp_a Frog - 1](https://atcoder.jp/contests/dp/tasks/dp_a)
+
+題目概述｜一隻青蛙可以一次跳一格或者兩格石頭，然而跳石頭是要付出代價的，代價是 $abs(h[i] - h[j])$ ，我們要找出最小的代價
+
+題解｜走到第一顆石頭只有一種方法可以到所以只能dp[1] = abs(h[1] - h[0])  
+但走到其他石頭就不是這樣了可以有兩種方法可以走到，可以一次走兩步或者走一步  
+因為我們希望有著最少的代價，那根據貪心法的定理我們可以知道每步都走最少那麼整題都將是最少。
+德證我們只需要選擇dp最小代價的就好了  
+因此dp轉移式為 $dp[i] = min((dp[i - 1] + abs(h[i] - h[i - 1])), (dp[i - 2] + abs(h[i] - h[i - 2])))$
+```cpp
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n; cin >> n;
+	int h[n];
+	for (int i = 0; i < n; i++) cin >> h[i];
+	
+	int dp[n];
+	dp[0] = 0;
+	dp[1] = abs(h[1] - h[0]);
+	
+	for (int i = 2; i < n; i++)
+	{
+		int d = dp[i - 2] + abs(h[i] - h[i - 2]);
+		int p = dp[i - 1] + abs(h[i] - h[i - 1]);
+		
+		dp[i] = min(d, p);
+	}
+	cout << dp[n - 1];
 }
 ```
