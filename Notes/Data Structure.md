@@ -21,6 +21,7 @@
 10. Linked List  
 11. Priority Queue  
 12. Disjoint Set（Union-Find）
+13. Segment Tree
 
 ---
 
@@ -325,4 +326,7 @@
 
 **清空**|
 ```m.clear();```
+
+
+
 
