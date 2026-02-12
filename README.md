@@ -111,3 +111,4 @@
 - [UVa 10684 - The jackpot](UVa/UVa%2010684%20-%20The%20jackpot)
 - [UVa 10450 — World Cup Noise](UVa/UVa%2010450%20-%20World%20Cup%20Noise)
 - [訊息排排隊-1 - shanC](%E9%9B%9C%E9%A0%85/%E8%A8%8A%E6%81%AF%E6%8E%92%E6%8E%92%E9%9A%8A-1%20-%20ShanC.cpp)
+- [CSES - Static Range Minimum Queries](CSES/CSES%20-%20Static%20Range%20Minimum%20Queries.cpp)
