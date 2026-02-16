@@ -1,4 +1,6 @@
-# Competitive-Programming 超大皮炎
+# Competitive-Programming 
+### CodeForces
+- [CF 1080 - pA](CodeForces/CF%201080%20pA.cpp)
 ### LeetCode
 - [LeetCode - 240](LeetCode/LeetCode%20-%20240)
 - [LeetCode - 74](LeetCode%20-%2074)
