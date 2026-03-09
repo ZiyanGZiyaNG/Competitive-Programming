@@ -60,6 +60,7 @@
 - [APCS 2025/06 - pB (模擬)](APCS/APCS%202025-06%20%20pB)
 - [APCS 2025/10(M) - pC (MAP)](APCS/APCS%202025-10(M)%20pC)
 - [APCS 2026/03(HM) - pA (二分搜+前綴)](APCS/APCS%202026-03(hm)%20pA)
+- [APCS 2026/03(HM) - pB (Two Pointer)](APCS/APCS%202026-03(hm)%20pB)
 
 ### CPE
 #### 1★
