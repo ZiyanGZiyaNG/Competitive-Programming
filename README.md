@@ -101,7 +101,8 @@
 - [97學年度 彰雲嘉區 資訊學科能力競賽 pA](%E5%AD%B8%E7%A7%91%E8%83%BD%E5%8A%9B%E7%AB%B6%E8%B3%BD/97%E5%AD%B8%E5%B9%B4%E5%BA%A6%20%E5%BD%B0%E9%9B%B2%E5%98%89%E5%8D%80%20%E8%B3%87%E8%A8%8A%E5%AD%B8%E7%A7%91%E8%83%BD%E5%8A%9B%E7%AB%B6%E8%B3%BD%20pA.cpp)
 - [111學年度 hgsh 校內賽 pC WAKUWAKU 尋找興奮源 (⌓‿⌓)](學科能力競賽/111學年度%20hgsh%20校內賽%20pC.%20WAKUWAKU%20尋找興奮源%20(⌓‿⌓))
 - [107學年度 北二區 學科能力競賽複賽 pE](學科能力競賽/107%E5%B9%B4%E5%8C%97%E4%BA%8C%E5%8D%80%E8%B3%87%E8%A8%8A%E5%AD%B8%E7%A7%91%E8%83%BD%E5%8A%9B%E8%A4%87%E8%B3%BD%20-%20pE)
-- [101學年度 桃竹苗區 資訊學科能力競賽](學科能力競賽/101學年度%20桃竹苗區%20資訊學科能力競賽%20%20pA.cpp)
+- [101學年度 桃竹苗區 資訊學科能力競賽 pA](學科能力競賽/101學年度%20桃竹苗區%20資訊學科能力競賽%20%20pA.cpp)
+- [106 彰雲嘉 資訊學科能力 複賽 pC](學科能力競賽/106%20彰雲嘉%20資訊學科能力%20複賽%20pC.cpp)
 
 ### Atcoder
 - [JPRS Programming Contest 2026#1 (AtCoder Beginner Contest 442)](AtCoder/JPRS%20Programming%20Contest%202026%231%20(AtCoder%20Beginner%20Contest%20442))
