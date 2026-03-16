@@ -1,54 +1,42 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
-long long int a[200001];
-struct seg
+int n, q;
+vector<int> a;
+vector<int> tree;
+void build(int l, int r, int id)
 {
-	long long int n;
-	vector<long long int> tree;
-	seg(long long int _n)
+	if (l == r)
 	{
-		n = _n;
-		tree.resize(4 * n + 1);
+		tree[id] = a[l];
+		return;
 	}
-	
-	void build(long long int l, long long int r, long long int id)
+	int mid = (l + r) / 2;
+	build(l, mid, 2 * id);
+	build(mid + 1, r, 2 * id + 1);
+	tree[id] = min(tree[2 * id], tree[2 * id + 1]);
+}
+
+int query(int ql, int qr, int l, int r, int id)
+{
+	if (ql <= l and r <= qr) return tree[id];
+	int mid = (l + r) / 2;
+	if (qr <= mid) return query(ql, qr, l, mid, 2 * id);
+	else if (ql > mid) return query(ql, qr, mid + 1, r, 2 * id + 1);
+	else
 	{
-		if (l == r)
-		{
-			tree[id] = a[l];
-			return;
-		}
-		long long int mid = (l + r) / 2;
-		build(l, mid , 2 * id);
-		build(mid + 1, r, 2 * id + 1);
-		tree[id] = min(tree[id * 2], tree[id * 2 + 1]);
-	}
-		
-	long long int query(long long int ql, long long int qr, long long int l, int r, int id)
-	{
-		if (ql <= l and r <= qr) return tree[id];
-		long long int mid = (l + r) / 2;
-		if (ql > mid) return query(ql, qr, mid + 1, r, 2 * id + 1);
-		else if (qr <= mid) return query(ql, qr, l, mid, 2 * id);
-		else 
-		{
-			return min(query(ql, qr, mid + 1, r, 2 * id + 1), query(ql, qr, l, mid, 2 * id));
-		}
-	}
-};
- 
- 
+		return min(query(ql, mid, l, mid, 2 * id), query(mid + 1, qr, mid + 1, r, 2 * id + 1));
+	}	
+}
 int main()
 {
-	long long int n, q; cin >> n >> q;
-	for (long long int i = 1; i <= n; i++) cin >> a[i];
-	seg s(n);
-	s.build(1, n, 1);
-	for (long long int i = 0; i < q; i++)
+	cin >> n >> q;
+	a.resize(n + 1);
+	tree.resize(4 * n + 1);
+	for (int i = 1; i <= n; i++) cin >> a[i];
+	build(1, n, 1);
+	while (q--)
 	{
-		long long int a, b; cin >> a >> b;
-		cout << s.query(a, b, 1, n, 1) << "\n";
+		int x, y; cin >> x >> y;
+		 cout << query(x, y, 1, n, 1) << '\n';
 	}
 }
