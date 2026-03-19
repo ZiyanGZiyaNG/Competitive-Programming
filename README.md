@@ -129,3 +129,4 @@
 - [CSES Dynamic Range Sum](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/CSES/CSES%20Dynamic%20Range%20Sum%20Queries.cpp)
 - [CSES Dynamic Range Minimum Queries](CSES%20-%20Dynamic%20Range%20Minimum%20Queries.cpp)
 - [e346. 區間合練習](雜項/e346.%20區間和練習.cpp)
+- [CSES - Minimizing Conins](CSES/CSES%20-%20Minimizing%20Coins.cpp)
