@@ -113,6 +113,7 @@
 - [Atcoder dp_a Frog 1](Atcoder/AtCoder%20dp_a%20-%20Frog%201)
 - [Atcoder dp_b Frog 2](Atcoder/AtCoder%20dp_b%20-%20Frog%202)
 - [Atcoder dp_c Vacation](Atcoder/AtCoder%20dp_c%20-%20Vacation)
+- [B - Fenwick Tree](AtCoder/B%20-%20Fenwick%20Tree.cpp)
 
 
 ### 其他
