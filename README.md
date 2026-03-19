@@ -127,3 +127,4 @@
 - [d799. 區間求和 (Lazytag)](/%E9%9B%9C%E9%A0%85/d799.%20%E5%8C%BA%E9%97%B4%E6%B1%82%E5%92%8C.cpp)
 - [CSES Dynamic Range Sum](https://github.com/ZiyanGZiyaNG/Competitive-Programming/blob/main/CSES/CSES%20Dynamic%20Range%20Sum%20Queries.cpp)
 - [CSES Dynamic Range Minimum Queries](CSES%20-%20Dynamic%20Range%20Minimum%20Queries.cpp)
+- [e346. 區間合練習](雜項/e346.%20區間和練習.cpp)
