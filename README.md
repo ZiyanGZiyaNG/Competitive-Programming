@@ -120,6 +120,7 @@
 - [CSES 1633 - Dice Combinations](CSES/CSES%201633%20-%20Dice%20Combinations)
 - [TOJ 508 - 完美河道](TOJ/TOJ%20508%20-%20%E5%AE%8C%E7%BE%8E%E6%B2%B3%E9%81%93)
 - [TOJ 540 - 鐵人三項](TOJ/TOJ%20540%20-%20%E9%90%B5%E4%BA%BA%E4%B8%89%E9%A0%85)
+- [TOJ 27 - 遙控器2](TOJ/TOJ%20-%2027)
 - [Kattis - Riječi](Kattis/Kattis%20-%20Rije%C4%8Di)
 - [UVa 10684 - The jackpot](UVa/UVa%2010684%20-%20The%20jackpot)
 - [UVa 10450 — World Cup Noise](UVa/UVa%2010450%20-%20World%20Cup%20Noise)
