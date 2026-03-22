@@ -134,3 +134,4 @@
 - [e346. 區間合練習](雜項/e346.%20區間和練習.cpp)
 - [CSES - Minimizing Conins](CSES/CSES%20-%20Minimizing%20Coins.cpp)
 - [FDSH a041: 奇怪的老闆 (毒瘤: 雙線段樹)](雜項/FDHS%20a041%3A%20奇怪的老闆.cpp)
+- [CSES - Book Store](CSES/CSES%20-%20Book%20Shop.cpp)
