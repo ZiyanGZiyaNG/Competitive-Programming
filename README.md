@@ -122,6 +122,7 @@
 - [TOJ 540 - 鐵人三項](TOJ/TOJ%20540%20-%20%E9%90%B5%E4%BA%BA%E4%B8%89%E9%A0%85)
 - [TOJ 701 - 電學大師](雜項/TOJ%20-%20701.cpp)
 - [TOJ 27 - 遙控器2](TOJ/TOJ%20-%2027)
+- [TOJ 470 - 公假無雙](TOJ%20470.cpp)
 - [Kattis - Riječi](Kattis/Kattis%20-%20Rije%C4%8Di)
 - [UVa 10684 - The jackpot](UVa/UVa%2010684%20-%20The%20jackpot)
 - [UVa 10450 — World Cup Noise](UVa/UVa%2010450%20-%20World%20Cup%20Noise)
